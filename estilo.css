@@ -1,8 +1,44 @@
 h1{
-    color:tomato;
+    color:darkgoldenrod;
 }
 
 h2{
-    color:aqua;
+    color:tomato;
     font-size: 12pt;
+}
+
+body{
+    background-color:#F0EBF8;
+}
+
+.form-div{
+    background-color:white;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    color: black;
+}
+
+input{
+    color: black;
+}
+
+a{
+    color:yellow;
+}
+.top-bar{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.submitButton{
+    font-family:sans-serif;
+    font-weight: bold;
+    color: #F0EBF8;
+    background-color: #673AB7;
 }
