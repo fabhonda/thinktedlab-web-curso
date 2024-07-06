@@ -7,6 +7,12 @@
 </head>
 <body>
     <form action="/pagina-processa-dados-do-form" method="post">
+    
+    <div>
+        <a href="index.html"> Voltar para página anterior</a>
+    </div>
+
+
     <div>
         <label for="nome">Qual o seu nome?</label>
         <input type ="text" id="nome"/>
@@ -16,17 +22,41 @@
         <label for="email">E-mail:</label>
         <input type ="email" id="email"/>
     </div>
-
+    
     <div>
         <label for="msg">Mensagem:</label>
         <textarea id="msg"></textarea>
     </div>
 
+    <div>
+        <p>Qual sua idade?</p>
+        <input type="radio" name="idade" value="18_22"> 18 a 22 <br>
+        <input type="radio" name="idade" value="23_30"> 23 a 30 <br>
+        <input type="radio" name="idade" value="mais31"> acima de 31 <br>
+    </div>
 
+    <div>
+        <p>Precisamos de algumas informações sobre você e seu pet:</p>
+        <input type="checkbox" name="pergunta1" value="outros_animais"> Possuo outros animais de estimação além de gatos <br>
+        <input type="checkbox" name="pergunta2" value="animais_em_casa"> Os animais ficam dentro de casa <br>
+        <input type="checkbox" name="pergunta3" value="passear_sozinhos"> Não deixo os gatos passearem sozinhos <br>
+    </div>
+
+    <div>
+        Data de nascimento: <input type="date" name="nascimento"><br>
+    </div>
+
+    <div>
+        Quantos gatos você tem em casa?<br>
+        <!-- O segundo valor estará selecionado inicialmente -->
+        <select name="select">
+            <option value="valor1">1</option>
+            <option value="valor2" selected>2</option>
+            <option value="valor3">3 ou mais</option>
+        </select>
+    </div>
 
     </form>
-
-
 
     
 </body>
