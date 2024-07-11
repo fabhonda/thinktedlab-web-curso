@@ -17,19 +17,19 @@ body{
     border: 1px solid rgba(128, 128, 128, 0.262);
     width: 637px;
     height: auto;
-    height: 120px;
+    /* height: 120px; */
     border-radius: 10px; /* Arredonda os cantos*/
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .first-div{
     font-family: 'Roboto', sans-serif;
     background-color:white;
     width: 640px;
-    height: 200px; /* Permite altura variável */
+    height: 250px; /* Permite altura variável */
     background: linear-gradient(to bottom, #673AB7 4%, white 4%);
     border-radius: 10px; /* Arredonda os cantos*/
     padding-top: 10px;
@@ -122,9 +122,9 @@ hr {
 
 select {
     font-family: 'Roboto', sans-serif;
-    width: 300px;
+    width: 180px;
     padding: 10px;
-    border: 2px solid #ccc; /* Adiciona uma borda completa em cinza */
+    border: 2px solid #cccccc6e; /* Adiciona uma borda completa em cinza */
     font-size: 16px; /* Define o tamanho da fonte */
     box-sizing: border-box; /* Inclui o padding e a borda na largura total */
     outline: none; /* Remove a borda de foco padrão */
@@ -134,4 +134,8 @@ select {
 option[disabled] {
     color: #aeaeae1e;
     display: none; /* Esconde a opção placeholder na lista de opções */
+}
+
+input{
+    margin-bottom: 30px;
 }
