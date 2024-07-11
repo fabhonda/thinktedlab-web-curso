@@ -6,12 +6,7 @@ import Component from './components/Component'
 import NavBar from './components/navbar/NavBar'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const item = "E o mais próximo é no Eldorado, bem pertinho."
-  const handleCount = ()=>{
-    setCount(count+1)
-  }
-
+  
   return (
     <>
       <Component/>

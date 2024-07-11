@@ -12,33 +12,126 @@ body{
 }
 
 .form-div{
+    font-family: 'Roboto', sans-serif;
     background-color:white;
-    padding-top: 1px;
-    padding-left: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.262);
+    width: 637px;
+    height: auto;
+    height: 120px;
+    border-radius: 10px; /* Arredonda os cantos*/
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.first-div{
+    font-family: 'Roboto', sans-serif;
+    background-color:white;
+    width: 640px;
+    height: 200px; /* Permite altura variável */
+    background: linear-gradient(to bottom, #673AB7 4%, white 4%);
+    border-radius: 10px; /* Arredonda os cantos*/
+    padding-top: 10px;
+    padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 10px;
 }
 
 p{
-    color: black;
-}
-
-input{
+    font-family: 'Roboto', sans-serif;
     color: black;
 }
 
 a{
-    color:yellow;
+    color:black;
 }
-.top-bar{
+/* .top-bar{
+    width: auto;
+    height: 150px
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
-    padding-top: 50px;
+    padding-left: 10px;
     padding-bottom: 50px;
-}
+    margin-bottom: 20px; /* Adiciona espaço abaixo da barra superior} */
 
 .submitButton{
-    font-family:sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #F0EBF8;
+    border: none;
     background-color: #673AB7;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+body, html{
+    display: flex;
+    flex-direction: column; /* Permite empilhar elementos verticalmente */
+    align-items: center;
+
+}
+
+hr {
+    border: 0; /* Remove a borda padrão */
+    height: 1px; /* Define a altura da linha */
+    background: #ccc; /* Define uma cor clara para a linha */
+    margin: 20px 0; /* Define a margem acima e abaixo da linha */
+    width: 100%; /* Ajusta a largura para 100% da div */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+
+.divisor{
+    display: inline-block;
+    margin: 0;
+}
+
+.text-question {
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    /* padding: 10px; Adiciona padding interno */
+    border: none; /* Remove todas as bordas padrão */
+    border-bottom: 2px solid #ccc; /* Adiciona uma borda inferior em cinza */
+    font-size: 16px; /* Define o tamanho da fonte */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+.multiple-question{
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    color: red;
+}
+
+.date-question{
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    /* padding: 10px; Adiciona padding interno */
+    border: none; /* Remove todas as bordas padrão */
+    border-bottom: 2px solid #ccc; /* Adiciona uma borda inferior em cinza */
+    font-size: 16px; /* Define o tamanho da fonte */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+select {
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc; /* Adiciona uma borda completa em cinza */
+    font-size: 16px; /* Define o tamanho da fonte */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    outline: none; /* Remove a borda de foco padrão */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+}
+
+option[disabled] {
+    color: #aeaeae1e;
+    display: none; /* Esconde a opção placeholder na lista de opções */
 }

@@ -5,41 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <form action="/pagina-processa-dados-do-form" method="post">
     
-        <div class="top-bar">
-            Formulário sem título
-            <button type="submit" class="submitButton">Enviar</button>
-        </div>
+        <!-- <div class="top-bar">
+            <img src="img/Google_Forms_Logo_512px.png" width="40" height="50">
+            Formulário sem Título
+        </div> -->
 
 
-    <div>
+    <!-- <div>
         <a href="index.html"> Voltar para página anterior</a>
+    </div><br> -->
+
+    <div class="first-div">
+        <p style="font-size: 32px;font-family: 'Roboto', sans-serif;">Formulário sem título</p>
+        <hr>
+        <p class="divisor" style="font-size: 14px; font-weight: bold; font-family: 'Roboto', sans-serif; color: rgb(93, 93, 93);">fabrizio.honda10@gmail.com</p>
+        <p class="divisor" style="font-size: 14px; font-family: 'Roboto', sans-serif; color: rgb(48, 123, 220);">Mudar de conta</p>
+        <img class="divisor" src="img/cloud.png" width="25" height="20" style="float: right;">
+        <hr>
+        <p style="font-size: 14px; font-family: 'Roboto', sans-serif; color: rgba(189, 13, 13, 0.79);">* Indica uma pergunta obrigatória</p>
     </div><br>
 
 
-    <div class="form-div">
-        <label for="nome">Qual o seu nome?</label><br>
-        <input type ="text" id="nome"/>
-    </div><br>
+    <!-- <div class="form-div">
+        <input type ="text" id="nome" placeholder="Pergunta sem título"/>
+        <select id="opcoes">
+            <option value="mult">Múltipla escolha</option>
+            <option value="sel">Caixas de seleção</option>
+            <option value="list">Lista suspensa</option>
+        </select>
+    </div><br> -->
 
     <div class="form-div">
-        <label for="email">E-mail:</label><br>
-        <input type ="email" id="email"/>
+        <label for="email" style="font-family: 'Roboto', sans-serif;">E-mail</label><br><br><br>
+        <input class="text-question" type ="email" id="email"/>
+    </div><br>  
+
+    <div class="form-div">
+        <label for="email" style="font-family: 'Roboto', sans-serif;"> Deixe uma mensagem motivacional</label><br><br><br>
+        <input class="text-question" type ="text" id="text"/>
     </div><br>
     
-    <div class="form-div">
+    <!-- <div class="form-div">
         <label for="msg">Mensagem:</label><br>
         <textarea id="msg"></textarea>
-    </div><br>
+    </div><br> -->
 
     <div class="form-div">
         <p>Qual sua idade?</p>
-        <input type="radio" name="idade" value="18_22"> 18 a 22 <br>
-        <input type="radio" name="idade" value="23_30"> 23 a 30 <br>
-        <input type="radio" name="idade" value="mais31"> acima de 31 <br>
+        <input class="multiple-question" type="radio" value="18_22" style="font-size: 80px;"> 18 a 22 <br>
+        <input class="multiple-question" type="radio" value="23_30"> 23 a 30 <br>
+        <input class="multiple-question" type="radio" value="mais31"> acima de 31 <br>
     </div><br>
 
     <div class="form-div">
@@ -50,18 +71,23 @@
     </div><br>
 
     <div class="form-div">
-        Data de nascimento: <input type="date" name="nascimento"><br>
+        Data de nascimento <br><br><br>
+        <input class="date-question" type="date" name="nascimento"><br>
     </div><br>
 
     <div class="form-div">
-        Quantos gatos você tem em casa?<br>
+        Quantos gatos você tem em casa?<br><br><br>
         <!-- O segundo valor estará selecionado inicialmente -->
-        <select name="select">
+        <select class="selection-question" name="select">
+            <option value="" disabled selected>Escolher</option>
             <option value="valor1">1</option>
-            <option value="valor2" selected>2</option>
+            <option value="valor2">2</option>
             <option value="valor3">3 ou mais</option>
         </select>
     </div><br>
+
+    <button type="submit" class="submitButton" style="float: left;">Enviar</button>
+    <p style="float: right; font-weight:500; font-size: 14px; font-family: 'Roboto', sans-serif; color: rgb(79, 24, 128);">Limpar formulário</p>
 
     </form>
 
