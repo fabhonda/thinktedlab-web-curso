@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fab - Projeto 1</title>
     <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" href="img/formsicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <form action="/pagina-processa-dados-do-form" method="post">
+
+        <!-- <script>alert("Olá, mundo!")</script> -->
     
         <!-- <div class="top-bar">
             <img src="img/Google_Forms_Logo_512px.png" width="40" height="50">
@@ -19,77 +22,77 @@
         </div> -->
 
 
-    <!-- <div>
-        <a href="index.html"> Voltar para página anterior</a>
-    </div><br> -->
+        <!-- <div>
+            <a href="index.html"> Voltar para página anterior</a>
+        </div><br> -->
 
-    <div class="first-div">
-        <p style="font-size: 32px;font-family: 'Roboto', sans-serif;">Fabrizio Honda - Projeto 1: Google Forms com HTML e CSS</p>
-        <hr>
-        <p class="divisor" style="font-size: 14px; font-weight: bold; color: rgb(93, 93, 93);">fabrizio.honda10@gmail.com</p>
-        <p class="divisor" style="font-size: 14px; color: rgb(48, 123, 220);">Mudar de conta</p>
-        <img class="divisor" src="img/cloud.png" width="25" height="20" style="float: right;">
-        <hr>
-        <p style="font-size: 14px; color: rgba(189, 13, 13, 0.79);">* Indica uma pergunta obrigatória</p>
-    </div><br>
+        <div class="first-div">
+            <p style="font-size: 32px;font-family: 'Roboto', sans-serif;">Fabrizio Honda - Projeto 1: Google Forms com HTML e CSS</p>
+            <hr>
+            <p class="divisor" style="font-size: 14px; font-weight: bold; color: rgb(93, 93, 93);">fabrizio.honda10@gmail.com</p>
+            <p class="divisor" style="font-size: 14px; color: rgb(48, 123, 220);">Mudar de conta</p>
+            <img class="divisor" src="img/cloud.png" width="25" height="20" style="float: right;">
+            <hr>
+            <p style="font-size: 14px; color: rgba(189, 13, 13, 0.79);">* Indica uma pergunta obrigatória</p>
+        </div><br>
 
 
-    <!-- <div class="form-div">
-        <input type ="text" id="nome" placeholder="Pergunta sem título"/>
-        <select id="opcoes">
-            <option value="mult">Múltipla escolha</option>
-            <option value="sel">Caixas de seleção</option>
-            <option value="list">Lista suspensa</option>
-        </select>
-    </div><br> -->
+        <!-- <div class="form-div">
+            <input type ="text" id="nome" placeholder="Pergunta sem título"/>
+            <select id="opcoes">
+                <option value="mult">Múltipla escolha</option>
+                <option value="sel">Caixas de seleção</option>
+                <option value="list">Lista suspensa</option>
+            </select>
+        </div><br> -->
 
-    <div class="form-div">
-        <label for="email" style="font-family: 'Roboto', sans-serif;">E-mail</label><br><br><br>
-        <input class="text-question" type ="email" id="email" placeholder="Seu-email"/>
-    </div><br>  
+        <div class="form-div">
+            <label for="email" style="font-family: 'Roboto', sans-serif;">E-mail</label><br><br><br>
+            <input class="text-question" type ="email" id="email" placeholder="Seu-email"/>
+        </div><br>  
 
-    <div class="form-div">
-        <label for="email" style="font-family: 'Roboto', sans-serif;"> Deixe uma mensagem motivacional</label><br><br><br>
-        <input class="text-question" type ="text" id="text" placeholder="Digite aqui"/>
-    </div><br>
-    
-    <!-- <div class="form-div">
-        <label for="msg">Mensagem:</label><br>
-        <textarea id="msg"></textarea>
-    </div><br> -->
+        <div class="form-div">
+            <label for="text" style="font-family: 'Roboto', sans-serif;"> Deixe uma mensagem motivacional</label><br><br><br>
+            <input class="text-question" type ="text" id="text" placeholder="Digite aqui"/>
+        </div><br>
+        
+        <!-- <div class="form-div">
+            <label for="msg">Mensagem:</label><br>
+            <textarea id="msg"></textarea>
+        </div><br> -->
 
-    <div class="form-div">
-        <p>Qual sua idade?</p><br>
-        <input class="multiple-question" type="radio" value="18_22"> 18 a 22 <br>
-        <input class="multiple-question" type="radio" value="23_30"> 23 a 30 <br>
-        <input class="multiple-question" type="radio" value="mais31"> acima de 31 <br>
-    </div><br>
+        <div class="form-div">
+            <p>Qual sua idade?</p><br>
+            <input class="multiple-question" type="radio" value="18_22" name="idade"> 18 a 22 <br>
+            <input class="multiple-question" type="radio" value="23_30" name="idade"> 23 a 30 <br>
+            <input class="multiple-question" type="radio" value="mais31" name="idade"> acima de 31 <br>
+        </div><br>
 
-    <div class="form-div">
-        <p>Precisamos de algumas informações sobre você e seu pet:</p><br>
-        <input type="checkbox" name="pergunta1" value="outros_animais"> Possuo outros animais de estimação além de gatos <br>
-        <input type="checkbox" name="pergunta2" value="animais_em_casa"> Os animais ficam dentro de casa <br>
-        <input type="checkbox" name="pergunta3" value="passear_sozinhos"> Não deixo os gatos passearem sozinhos <br>
-    </div><br>
+        <div class="form-div">
+            <p>Precisamos de algumas informações sobre você e seu pet:</p><br>
+            <input type="checkbox" name="pergunta1" value="outros_animais"> Possuo outros animais de estimação além de gatos <br>
+            <input type="checkbox" name="pergunta2" value="animais_em_casa"> Os animais ficam dentro de casa <br>
+            <input type="checkbox" name="pergunta3" value="passear_sozinhos"> Não deixo os gatos passearem sozinhos <br>
+        </div><br>
 
-    <div class="form-div">
-        Data de nascimento <br><br><br>
-        <input class="date-question" type="date" name="nascimento"><br>
-    </div><br>
+        <div class="form-div">
+            Data de nascimento <br><br><br>
+            <input class="date-question" type="date" name="nascimento"><br>
+        </div><br>
 
-    <div class="form-div">
-        Quantos gatos você tem em casa?<br><br><br>
-        <!-- O segundo valor estará selecionado inicialmente -->
-        <select class="selection-question" name="select">
-            <option value="" disabled selected>Escolher</option>
-            <option value="valor1">1</option>
-            <option value="valor2">2</option>
-            <option value="valor3">3 ou mais</option>
-        </select>
-    </div><br>
+        <div class="form-div">
+            Quantos gatos você tem em casa?<br><br><br>
+            <!-- O segundo valor estará selecionado inicialmente -->
+            <select class="selection-question" name="select">
+                <option value="" disabled selected>Escolher</option>
+                <option value="valor1">1</option>
+                <option value="valor2">2</option>
+                <option value="valor3">3 ou mais</option>
+            </select>
+        </div><br>
 
-    <button type="submit" class="submitButton" style="float: left;">Enviar</button>
-    <p style="float: right; font-weight:500; font-size: 14px; font-family: 'Roboto', sans-serif; color: rgb(79, 24, 128);">Limpar formulário</p>
+        <button type="submit" class="submitButton" style="float: left;">Enviar</button>
+        <button class="clearButton" type="reset">Limpar formulário</button>
 
     </form>
 

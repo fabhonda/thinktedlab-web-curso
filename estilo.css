@@ -103,6 +103,10 @@ hr {
     outline: none; /* Remove a borda de foco padrão */
 }
 
+.text-question:hover{
+    border-bottom: 2px solid #673AB7;
+}
+
 .multiple-question{
     font-family: 'Roboto', sans-serif;
     font-size: 80px;
@@ -138,4 +142,13 @@ option[disabled] {
 
 input{
     margin-bottom: 30px;
+}
+
+.clearButton{
+    border: none;
+    float: right;
+    font-weight:500;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(79, 24, 128);
 }
